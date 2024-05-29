@@ -92,24 +92,29 @@ a {
 footer {
     height: 130px;
     width: 100%;
-    background-color: red;
-
+    background-color: rgb(34, 33, 34)
 }
 
 .row-footer {
+    height: 100%;
     width: 100%;
-
-
+    display: flex;
 }
 
+/* COLONNA DI SINISTRA */
 .col-20.left {
     width: 20%;
     display: flex;
-    justify-content: right;
 }
 
 .col-60 {
     width: 60%;
+    display: flex;
+    padding-left: 100px;
+}
+
+.col-20.right {
+    width: 20%;
 }
 
 .content-mic {
@@ -120,7 +125,7 @@ footer {
 
 .content-mute {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .content-cam {
@@ -131,14 +136,14 @@ footer {
 
 .content-stop {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .col-50-left {
     height: 130px;
     width: 50%;
     margin-left: 40px;
-    position: relative;
+
     align-content: center;
     justify-content: right;
 }
@@ -146,19 +151,53 @@ footer {
 .col-50-right {
     height: 130px;
     width: 50%;
-    position: relative;
+
     align-content: center;
 }
 
 .fa-angle-up {
     color: white;
-    position: absolute;
     left: 50px;
     top: 60px;
     font-size: 20px;
 }
 
 .angle2 {
-    position: absolute;
     left: 100px;
+}
+
+/* COLONNA CENTRALE */
+
+.content-center {
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.fa-user-group {
+    padding-left: 80px;
+}
+
+.details {
+    font-size: 25px;
+}
+
+.fa-share-from-square {
+    color: lightgreen;
+    padding-left: 40px;
+}
+
+.fa-windows {
+    padding-left: 40px;
+}
+
+/* COLONNA DI DESTRA */
+.content-right {
+    font-size: 25px;
+    color: white;
+    justify-content: right;
+    background-color: rgb(74, 74, 74);
+    padding: 50px 0;
+    text-align: center;
 }
