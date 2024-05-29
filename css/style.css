@@ -10,6 +10,7 @@ body {
 
 .scroll {
     overflow-y: auto;
+    height: calc(100vh - 130px);
 }
 
 /* QUI INIZIA L'HEADER */
@@ -57,7 +58,6 @@ a {
 .container-main {
     width: 80%;
     margin: 0 auto;
-    height: calc(100vh - 150px);
 }
 
 .row-main {
@@ -67,6 +67,7 @@ a {
 
 .col-14 {
     width: calc(100% / 7);
+    min-width: 100px;
 }
 
 .content-main {
@@ -89,21 +90,75 @@ a {
 /* QUI INIZIA IL FOOTER */
 
 footer {
-    height: 150px;
+    height: 130px;
     width: 100%;
     background-color: red;
+
 }
 
 .row-footer {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+
 }
 
-.col-20 {
+.col-20.left {
     width: 20%;
+    display: flex;
+    justify-content: right;
 }
 
 .col-60 {
     width: 60%;
+}
+
+.content-mic {
+    font-size: 40px;
+    color: white;
+
+}
+
+.content-mute {
+    color: white;
+    font-size: 20px;
+}
+
+.content-cam {
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+}
+
+.content-stop {
+    color: white;
+    font-size: 20px;
+}
+
+.col-50-left {
+    height: 130px;
+    width: 50%;
+    margin-left: 40px;
+    position: relative;
+    align-content: center;
+    justify-content: right;
+}
+
+.col-50-right {
+    height: 130px;
+    width: 50%;
+    position: relative;
+    align-content: center;
+}
+
+.fa-angle-up {
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    font-size: 20px;
+}
+
+.angle2 {
+    position: absolute;
+    left: 100px;
 }
