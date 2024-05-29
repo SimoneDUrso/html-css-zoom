@@ -22,6 +22,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 30px;
 }
 
 .content-header {
@@ -34,6 +35,11 @@ body {
     background-color: grey;
     margin: 5px 10px;
     padding: 10px;
+    border-radius: 15px;
+}
+
+.zoom {
+    margin-right: 30px;
 }
 
 a {
@@ -49,19 +55,23 @@ a {
 }
 
 .row-main {
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 300px;
 }
 
 .col-14 {
     width: calc(100% / 7);
-
 }
 
 .content-main {
     margin: 10px;
-    background-color: blue;
-    border: 1px solid black;
     height: 200px;
+    background-image: url(https://picsum.photos/id/237/536/354);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    align-content: flex-end;
 }
